@@ -1,14 +1,14 @@
 #include "PresidentialPardonForm.h"
 
-PresidentialPardonForm::PresidentialPardonForm() : AForm("No Name", 25, 5), target_("No Target")
+PresidentialPardonForm::PresidentialPardonForm() : AForm("presidential pardon", 25, 5), target_("No Target")
 {
 }
 
-PresidentialPardonForm::PresidentialPardonForm(std::string target) : AForm("PresidentialPardonForm", 25, 5), target_(target)
+PresidentialPardonForm::PresidentialPardonForm(std::string target) : AForm("presidential pardon", 25, 5), target_(target)
 {
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &other) : AForm("PresidentialPardonForm", 25, 5), target_(other.target_)
+PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &other) : AForm("presidential pardon", 25, 5), target_(other.target_)
 {
 }
 
