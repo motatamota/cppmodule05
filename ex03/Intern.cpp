@@ -1,5 +1,24 @@
 #include "Intern.h"
 
+Intern::Intern()
+{
+}
+
+Intern::Intern(const Intern &other)
+{
+	(void)other;
+}
+
+Intern &Intern::operator=(const Intern & other)
+{
+	(void)other;
+	return (*this);
+}
+
+Intern::~Intern()
+{
+}
+
 AForm* createShrubberyCreationForm(const std::string& target) {
 	return new ShrubberyCreationForm(target);
 }
