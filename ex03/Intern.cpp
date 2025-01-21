@@ -51,6 +51,10 @@ AForm* Intern::makeForm(const std::string& formName, const std::string& target) 
 		}
 	}
 
-	std::cerr << "Error: Form \"" << formName << "\" not found." << std::endl;
-	return 0;
+	throw(NoFormatException());
+}
+
+const char	*Intern::NoFormatException::what() const throw()
+{
+	return ("Form not found.");
 }

@@ -60,3 +60,18 @@ std::ostream	&operator<<(std::ostream &stream, const AForm &other)
 		<< other.getExcuteGrade() << ".";
 	return (stream);
 }
+
+const char	*AForm::GradeTooHighException::what() const throw()
+{
+	return ("Grade too high");
+}
+
+const char	*AForm::GradeTooLowException::what() const throw()
+{
+	return ("Grade too low");
+}
+
+const char	*AForm::NoSignException::what() const throw()
+{
+	return ("No sign");
+}

@@ -19,6 +19,10 @@ public:
 	~Intern();
 
 	AForm* makeForm(const std::string& formName, const std::string& target) const;
+	class NoFormatException : public std::exception
+	{
+		const char* what() const throw();
+	};
 };
 
 #endif

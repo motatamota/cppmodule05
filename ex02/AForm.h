@@ -24,24 +24,15 @@ public:
 
 	class GradeTooHighException : public std::exception
 	{
-		const char* what() const throw()
-		{
-			return ("Grade too high");
-		}
+		const char* what() const throw();
 	};
 	class GradeTooLowException : public std::exception
 	{
-		const char* what() const throw()
-		{
-			return ("Grade too low");
-		}
+		const char* what() const throw();
 	};
 	class NoSignException : public std::exception
 	{
-		const char* what() const throw()
-		{
-			return ("No sign");
-		}
+		const char* what() const throw();
 	};
 	std::string		getName() const;
 	int				getSignedGrade() const;

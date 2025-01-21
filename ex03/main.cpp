@@ -15,6 +15,7 @@ int	main()
 		taro.signForm(*form);
 		taro.executeForm(*form);
 		delete(form);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
@@ -29,6 +30,22 @@ int	main()
 		taro.signForm(*form);
 		taro.executeForm(*form);
 		delete(form);
+		std::cout << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n' << '\n';
+	}
+	try
+	{
+		Intern intern;
+		AForm *form;
+		form = intern.makeForm("presidentia pardon", "taiga");
+		Bureaucrat taro("taro", 140);
+		taro.signForm(*form);
+		taro.executeForm(*form);
+		delete(form);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{

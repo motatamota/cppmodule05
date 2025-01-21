@@ -12,6 +12,7 @@ int	main()
 		AForm *p = new ShrubberyCreationForm("tree");
 		taiga.signForm(*p);
 		taiga.executeForm(*p);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
@@ -24,6 +25,7 @@ int	main()
 		AForm *p = new RobotomyRequestForm("Mouse");
 		taiga.signForm(*p);
 		taiga.executeForm(*p);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{

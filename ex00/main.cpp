@@ -6,6 +6,7 @@ int	main()
 	{
 		std::cout << "tset:1" << std::endl;
 		Bureaucrat tester("taiga", 0);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
@@ -16,6 +17,7 @@ int	main()
 	{
 		std::cout << "tset:2" << std::endl;
 		Bureaucrat tester("taiga", 151);
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
@@ -28,6 +30,7 @@ int	main()
 		Bureaucrat tester("taiga", 1);
 		std::cout << "constractor called" << std::endl;
 		tester.upGrade();
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
@@ -40,6 +43,7 @@ int	main()
 		Bureaucrat tester("taiga", 150);
 		std::cout << "constractor called" << std::endl;
 		tester.downGrade();
+		std::cout << std::endl;
 	}
 	catch(const std::exception& e)
 	{
