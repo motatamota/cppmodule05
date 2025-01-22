@@ -33,7 +33,6 @@ void	RobotomyRequestForm::execute(Bureaucrat const & excutor) const
 		throw (NoSignException());
 	if (this->getExcuteGrade() < excutor.getGrade())
 		throw (GradeTooLowException());
-	srand(time(NULL));
 	std::cout << "Drill: killllluuuuuuuuuuuuuuuuuuu!!!!!!!!!!!" << std::endl;
 	if (rand() % 2)
 		std::cout << "Success!! " << target_ << " is alive." << std::endl;

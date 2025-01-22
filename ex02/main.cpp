@@ -5,6 +5,7 @@
 
 int	main()
 {
+	srand(time(NULL));
 	try
 	{
 		std::cout << "tset:1" << std::endl;
