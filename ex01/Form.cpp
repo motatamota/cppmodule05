@@ -18,7 +18,10 @@ Form::Form(Form &other) : name_(other.name_), is_signed_(other.is_signed_), grad
 
 const Form	&Form::operator=(const Form &other)
 {
-	(void)other;
+	if (this != &other)
+	{
+		is_signed_ = other.is_signed_;
+	}
 	return (*this);
 }
 
