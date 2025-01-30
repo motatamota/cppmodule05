@@ -2,7 +2,7 @@ NAME = ex01
 FLAG = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp Bureaucrat.cpp Form.cpp
 OBJ = $(SRC:.cpp=.o)
-CC = g++
+CC = c++
 
 all: $(NAME)
 
